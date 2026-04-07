@@ -76,7 +76,7 @@
     mostrarSenha();
     let mensagem = "";
     let senha = input_senha.value;
-    mensagem += `Quantidade de caracteres:${senha.length} <br>`;
+    
 
     if (senha.length >= 8) {
       validacaoSenha = true;
@@ -93,6 +93,7 @@
 
     let temEspecial =
       senha.includes("!") ||
+      senha.includes("_") ||
       senha.includes("@") ||
       senha.includes("#") ||
       senha.includes("$") ||
